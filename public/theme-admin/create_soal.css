@@ -1,0 +1,75 @@
+#soalSurvey th {
+  background-color: #c7e8f5 !important;
+}
+#soalSurvey input[name^='pilihan_bs_'] {
+  width: 140px;
+  height: 25px;
+  margin: auto;
+  background-color: #c7e8f5;
+}
+
+#soalSurvey table tr:first-child th:nth-child(1) {
+  min-width: 100px !important;
+}
+#soalSurvey table tr:first-child th:nth-child(2) {
+  min-width: 500px !important;
+}
+
+#box-dragdrop {
+  position: relative; height: 650px !important;
+}
+
+#box-dragdrop #sortable { 
+  list-style-type: none; 
+  margin: 0; 
+  padding: 0; 
+  width: 100px; 
+  /* height: 90px;  */
+}
+#box-dragdrop #sortable li {
+  height: 90px; 
+  margin: 0 5px 5px 5px;
+}
+/* placeholder */
+#box-dragdrop .ui-state-highlight { 
+  background-color: lightgray;
+}
+#box-dragdrop .ui-state-default {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+#box-dragdrop .ui-state-default img {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+}
+#box-dragdrop .inImg {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+#box-dragdrop .inImg + label {
+  color: grey;
+  display: inline-block;
+  text-align: center;
+  border: none;
+  margin: 0;
+  cursor: pointer; /* "hand" cursor */
+}
+
+#box-dragdrop .inImg:focus + label,
+#box-dragdrop .inImg + label:hover {
+  opacity: .5;
+}
+#box-dragdrop .inImg + label * {
+	pointer-events: none;
+}
+
+#deskripsiSoalCerita img {
+  max-width: 100%;
+}

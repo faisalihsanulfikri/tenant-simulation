@@ -1,0 +1,336 @@
+.row .wizard {
+  width : 100%;
+}
+.row .wizard .content {
+  margin-left : 0 !important;
+}
+.row .wizard > .steps {
+  position : relative;
+  display : block;
+  width : 100%;
+}
+.row .wizard > .steps .current-info {
+  position : absolute;
+  left : -99999px;
+}
+.row .wizard > .steps > ul {
+  display : table;
+  width : 100%;
+  table-layout : fixed;
+  margin : 0;
+  padding : 0;
+  list-style : none;
+}
+.row .wizard > .steps > ul > li {
+  display : table-cell;
+  width : auto;
+  vertical-align : top;
+  text-align : center;
+  position : relative;
+}
+.row .wizard > .steps > ul > li a {
+  position : relative;
+  padding-top : 52px;
+  margin-top : 20px;
+  margin-bottom : 20px;
+  display : block;
+}
+.row .wizard > .steps > ul > li:before {
+  content : '';
+  display : block;
+  position : absolute;
+  z-index : 9;
+  left : 0;
+}
+.row .wizard > .steps > ul > li:after {
+  content : '';
+  display : block;
+  position : absolute;
+  z-index : 9;
+  right : 0;
+}
+.row .wizard > .steps > ul > li:first-child:before {
+  content : none;
+}
+.row .wizard > .steps > ul > li:last-child:after {
+  content : none;
+}
+.row .wizard > .steps > ul > li.current > a {
+  color : #333333;
+  cursor : default;
+}
+.row .wizard > .steps > ul > li.current .step {
+  border-color : #016A82;
+  background-color : #FFFFFF;
+  color : #016A82;
+}
+.row .wizard > .steps > ul > li.disabled a {
+  color : #999999;
+  cursor : default;
+}
+.row .wizard > .steps > ul > li.disabled a:hover {
+  color : #999999;
+  cursor : default;
+}
+.row .wizard > .steps > ul > li.disabled a:focus {
+  color : #999999;
+  cursor : default;
+}
+.row .wizard > .steps > ul > li.done a {
+  color : #999999;
+}
+.row .wizard > .steps > ul > li.done a:hover {
+  color : #999999;
+}
+.row .wizard > .steps > ul > li.done a:focus {
+  color : #999999;
+}
+.row .wizard > .steps > ul > li.done .step {
+  background-color : #016A82;
+  border-color : #016A82;
+  color : #FFFFFF;
+}
+.row .wizard > .steps > ul > li.error .step {
+  border-color : #F44336;
+  color : #F44336;
+}
+.row .wizard > .steps .step {
+  background-color : #FFFFFF;
+  display : inline-block;
+  position : absolute;
+  top : 0;
+  left : 50%;
+  margin-left : -24px;
+  z-index : 10;
+  text-align : center;
+}
+.row .wizard > .content {
+  position : relative;
+  width : auto;
+  padding : 0;
+  margin : 0;
+}
+.row .wizard > .content > .title {
+  position : absolute;
+  left : -99999px;
+}
+.row .wizard > .content > .body {
+  padding : 0 20px;
+}
+.row .wizard > .content > iframe {
+  border : 0 none;
+  width : 100%;
+  height : 100%;
+}
+.row .wizard > .actions {
+  position : relative;
+  display : block;
+  text-align : right;
+  padding : 20px;
+  padding-top : 0;
+}
+.row .wizard > .actions > ul {
+  float : right;
+  list-style : none;
+  padding : 0;
+  margin : 0;
+}
+.row .wizard > .actions > ul:after {
+  content : '';
+  display : table;
+  clear : both;
+}
+.row .wizard > .actions > ul > li {
+  float : left;
+}
+.row .wizard > .actions > ul > li + li {
+  margin-left : 10px;
+}
+.row .wizard > .actions > ul > li > a {
+  background : #016A82;
+  color : #FFFFFF;
+  display : block;
+  padding : 7px 12px;
+  border-radius : 2px;
+  border : 1px solid transparent;
+}
+.row .wizard > .actions > ul > li > a:hover {
+  -webkit-box-shadow : 0 0 0 100px rgba(0, 0, 0, 0.05) inset;
+          box-shadow : 0 0 0 100px rgba(0, 0, 0, 0.05) inset;
+}
+.row .wizard > .actions > ul > li > a:focus {
+  -webkit-box-shadow : 0 0 0 100px rgba(0, 0, 0, 0.05) inset;
+          box-shadow : 0 0 0 100px rgba(0, 0, 0, 0.05) inset;
+}
+.row .wizard > .actions > ul > li > a:active {
+  -webkit-box-shadow : 0 0 0 100px rgba(0, 0, 0, 0.1) inset;
+          box-shadow : 0 0 0 100px rgba(0, 0, 0, 0.1) inset;
+}
+.row .wizard > .actions > ul > li > a[href='#previous'] {
+  background-color : #EED70C;
+  color : #FFFFFF;
+  border : 1px solid #DDDDDD;
+}
+.row .wizard > .actions > ul > li > a[href='#previous']:hover {
+  -webkit-box-shadow : 0 0 0 100px rgba(0, 0, 0, 0.02) inset;
+          box-shadow : 0 0 0 100px rgba(0, 0, 0, 0.02) inset;
+}
+.row .wizard > .actions > ul > li > a[href='#previous']:focus {
+  -webkit-box-shadow : 0 0 0 100px rgba(0, 0, 0, 0.02) inset;
+          box-shadow : 0 0 0 100px rgba(0, 0, 0, 0.02) inset;
+}
+.row .wizard > .actions > ul > li > a[href='#previous']:active {
+  -webkit-box-shadow : 0 0 0 100px rgba(0, 0, 0, 0.04) inset;
+          box-shadow : 0 0 0 100px rgba(0, 0, 0, 0.04) inset;
+}
+.row .wizard > .actions > ul > li.disabled > a {
+  color : #999999;
+}
+.row .wizard > .actions > ul > li.disabled > a:hover {
+  color : #999999;
+}
+.row .wizard > .actions > ul > li.disabled > a:focus {
+  color : #999999;
+}
+.row .wizard > .actions > ul > li.disabled > a[href='#previous'] {
+  -webkit-box-shadow : none;
+          box-shadow : none;
+}
+.row .wizard > .actions > ul > li.disabled > a[href='#previous']:hover {
+  -webkit-box-shadow : none;
+          box-shadow : none;
+}
+.row .wizard > .actions > ul > li.disabled > a[href='#previous']:focus {
+  -webkit-box-shadow : none;
+          box-shadow : none;
+}
+.row .wizard.wizard-circle > .steps > ul > li:before, .row .wizard.wizard-circle > .steps > ul > li:after {
+  top : 43px;
+  width : 50%;
+  height : 5px;
+  background-color : #016A82;
+}
+.row .wizard.wizard-circle > .steps > ul > li.current:after {
+  background-color : #FFFFFF;
+}
+.row .wizard.wizard-circle > .steps > ul > li.current ~ li:before {
+  background-color : #FFFFFF;
+}
+.row .wizard.wizard-circle > .steps > ul > li.current ~ li:after {
+  background-color : #FFFFFF;
+}
+.row .wizard.wizard-circle > .steps .step {
+  width : 50px;
+  height : 50px;
+  line-height : 40px;
+  border : 5px solid #FFFFFF;
+  font-size : 1.3rem;
+  border-radius : 50%;
+}
+.row .wizard.wizard-notification > .steps > ul > li:before, .row .wizard.wizard-notification > .steps > ul > li:after {
+  top : 39px;
+  width : 50%;
+  height : 2px;
+  background-color : #673AB7;
+}
+.row .wizard.wizard-notification > .steps > ul > li.current .step {
+  border : 2px solid #673AB7;
+  color : #673AB7;
+  line-height : 36px;
+}
+.row .wizard.wizard-notification > .steps > ul > li.current .step:after {
+  border-top-color : #673AB7;
+}
+.row .wizard.wizard-notification > .steps > ul > li.current:after {
+  background-color : #FFFFFF;
+}
+.row .wizard.wizard-notification > .steps > ul > li.current ~ li:before {
+  background-color : #FFFFFF;
+}
+.row .wizard.wizard-notification > .steps > ul > li.current ~ li:after {
+  background-color : #FFFFFF;
+}
+.row .wizard.wizard-notification > .steps > ul > li.done .step {
+  color : #FFFFFF;
+}
+.row .wizard.wizard-notification > .steps > ul > li.done .step:after {
+  border-top-color : #673AB7;
+}
+.row .wizard.wizard-notification > .steps .step {
+  width : 40px;
+  height : 40px;
+  line-height : 40px;
+  font-size : 1.3rem;
+  border-radius : 15%;
+  background-color : #FFFFFF;
+}
+.row .wizard.wizard-notification > .steps .step:after {
+  content : '';
+  width : 0;
+  height : 0;
+  position : absolute;
+  bottom : 0;
+  left : 50%;
+  margin-left : -8px;
+  margin-bottom : -8px;
+  border-left : 7px solid transparent;
+  border-right : 7px solid transparent;
+  border-top : 8px solid #FFFFFF;
+}
+.row .wizard.vertical > .steps {
+  display : inline;
+  float : left;
+  width : 10%;
+}
+.row .wizard.vertical > .steps > ul > li {
+  display : block;
+  width : 100%;
+}
+.row .wizard.vertical > .steps > ul > li:before, .row .wizard.vertical > .steps > ul > li:after {
+  background-color : transparent;
+}
+.row .wizard.vertical > .steps > ul > li.current:before, .row .wizard.vertical > .steps > ul > li.current:after {
+  background-color : transparent;
+}
+.row .wizard.vertical > .steps > ul > li.current ~ li:before {
+  background-color : transparent;
+}
+.row .wizard.vertical > .steps > ul > li.current ~ li:after {
+  background-color : transparent;
+}
+
+@media (max-width: 768px) {
+  .row .wizard > .steps > ul {
+    margin-bottom : 20px;
+  }
+  .row .wizard > .steps > ul > li {
+    display : block;
+    float : left;
+    width : 50%;
+  }
+  .row .wizard > .steps > ul > li > a {
+    margin-bottom : 0;
+  }
+  .row .wizard > .steps > ul > li:first-child:before {
+    content : '';
+  }
+  .row .wizard > .steps > ul > li:last-child:after {
+    content : '';
+    background-color : #673AB7;
+  }
+  .row .wizard.vertical > .steps {
+    width : 15%;
+  }
+}
+
+@media (max-width: 480px) {
+  .row .wizard > .steps > ul > li {
+    width : 100%;
+  }
+  .row .wizard > .steps > ul > li.current:after {
+    background-color : #673AB7;
+  }
+  .row .wizard.vertical > .steps {
+    width : 20%;
+  }
+}

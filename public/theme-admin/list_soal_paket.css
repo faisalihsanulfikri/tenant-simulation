@@ -1,0 +1,14 @@
+.list_soal_paket .table tbody tr td > * {
+  display: inline;
+  font-size: .88rem !important;
+}
+
+.list_soal_paket .table thead tr th,
+.list_soal_paket .table.referensi-bacaan tbody tr td,
+.list_soal_paket .table.daftar-soal tbody tr td {
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 300px;
+  max-height: 30px;
+  text-overflow: ellipsis;
+}

@@ -1,0 +1,97 @@
+@media only screen and (max-width: 667px) {
+  #test-page {
+    padding-top: 0 !important;
+  }
+  #test-page .container-fluid {
+    padding: 0 !important;
+  }
+  #test-page .header-test .col-md-6 {
+    text-align: center !important;
+  }
+  #test-page .header-test .col-md-6:first-child {
+    margin-bottom: 30px;
+  }
+
+  #test-page #drag-column, #test-page #drag-column-jawaban {
+    padding: 0px !important;
+  }
+
+  #test-page #data-soal-basic .col-md-6:first-child .card,
+  #test-page #data-soal-basic .card.card-tf-survey {
+    box-shadow: none !important;
+    padding: 0 !important;
+  }
+
+  #test-page #data-soal-basic .col-md-6:first-child .card .card-body,
+  #test-page #data-soal-basic .card.card-tf-survey .card-body {
+    padding: 20px 0 !important;
+  }
+
+  #test-page #data-soal-basic .card .card-body .card-text > * {
+    font-size: 2.5em !important;
+  }
+
+  #test-page #data-soal-basic .row .col-md-6:last-child p {
+    font-size: 17px;
+  }
+
+  .card-body.text-center .text-left ul,
+  .card-body.text-center .card-jawaban ul {
+    padding: 10px;
+  }
+
+  #detail-test-page {
+    padding-top: 20px !important;
+  }
+
+  #detail-test-page > .container > .row > div {
+    padding-right: 0 !important;
+  }
+
+  #detail-test-page > div {
+    padding: 0 !important
+  }
+
+  #detail-test-page > div > a.btn_style {
+    margin-left: 25px !important;
+  }
+
+  #detail-test-page .list-jwb-kanan ul {
+    padding: 0px !important;
+    margin: 0 0 0 15px !important;
+  }
+
+  #detail-test-page * {
+    font-size: 14px !important;
+  }
+}
+
+#detail-test-page .list-jwb-kanan ul {
+  padding-top: 10px !important;
+}
+
+#test-page #drag-deskripsiSoal + .row .card {
+  overflow: visible;
+}
+
+#test-page #drag-column, #test-page #drag-column-jawaban {
+  min-height: 50px !important;
+}
+
+.card-body.text-center .card-jawaban img {
+  max-width: 100% !important;
+  object-fit: contain;
+  /* width: auto !important;
+  height: auto !important; */
+}
+
+.card-body.text-center .card-jawaban img.img-drag {
+  height: 90px !important;
+  width: 100px !important;
+  border: 1px solid lightgrey;
+}
+
+.card-body.text-center .text-left ul.text-success img {
+  max-width: 100% !important;
+  object-fit: contain;
+}

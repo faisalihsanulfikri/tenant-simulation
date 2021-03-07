@@ -13,6 +13,9 @@ class SchoolController extends Controller
     {
         $schools = School::all();
         return response()->json([
+            "status" => "SUCCESS",
+            "code" => "200",
+            "message" => "Success",
             'data' => $schools
         ]);
     }
